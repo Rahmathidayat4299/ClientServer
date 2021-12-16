@@ -39,10 +39,15 @@
         </section>
 
         <div class="form">
-        <form  action="aksi_tambah.php" method="post" >
+        <form  action="add_form_pinjaman.php" method="post" >
     <div class="form-group">
         <label for="id">ID</label>
         <input type="text" class="form-control" id="id" aria-describedby="emailHelp" name = "id" placeholder="masukkan id">
+        
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">nik</label>
+        <input type="text" class="form-control" id="nik" name ="nik" aria-describedby="emailHelp" placeholder="masukkan nik">
         
     </div>
     <div class="form-group">
@@ -50,36 +55,11 @@
         <input type="text" class="form-control" id="nama" name ="nama" aria-describedby="emailHelp" placeholder="masukkan nama">
         
     </div>
-    <div class="form-group">
-        <label for="exampleInputEmail1">Alamat</label>
-        <input type="text" class="form-control" id="alamat" name ="alamat" aria-describedby="emailHelp" placeholder="masukkan alamat">
-        
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios1" value="L" checked>
-        <label class="form-check-label" for="exampleRadios1">
-            laki-laki
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios2" value="P">
-        <label class="form-check-label" for="exampleRadios2">
-            perempuan
-        </label>
-    </div>
-  <select name = "agama" id = "agama" class="form-control form-control-sm">
-    <option value="" disabled selected>Agama</option>
-                                <option value="islam">Islam</option>
-                                <option value="kristen">Kristen</option>
-                                <option value="katolik">Katolik</option>
-                                <option value="hindu">Hindu</option>
-                                <option value="buddha">Buddha</option>
-                                <option value="konghucu">Konghucu</option>
-    </select>
+    
 
     <div class="form-group">
         <label for="exampleInputEmail1">Simpanan</label>
-        <input type="text" class="form-control" id="simpanan" name ="simpanan" aria-describedby="emailHelp" placeholder="masukkan jumlah simpanan">
+        <input type="text" class="form-control" id="pinjaman" name ="pinjaman" aria-describedby="emailHelp" placeholder="masukkan jumlah pinjaman">
         
     </div>
 

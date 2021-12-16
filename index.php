@@ -26,14 +26,20 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarNav">
              <ul class="navbar-nav ml-auto">
-                 <li class="nav-item ">
-                     <a class="nav-link" href="index.php">Home </a>
-                     </li>
+             <li class="nav-item">
+                         <a class="nav-link" href="index.php">HOME</a> 
+                        </li>
                      <li class="nav-item">
                          <a class="nav-link" href="form_simpan_anggota.php">REGISTRASI MEMBER</a> 
                         </li>
                         <li class="nav-item">
                              <a class="nav-link" href="data_anggota.php">LIST MEMBER</a>
+                            </li>
+                            <li class="nav-item">
+                             <a class="nav-link" href="add_pinjaman.php">REGISTER BORROWER</a>
+                            </li>
+                            <li class="nav-item">
+                             <a class="nav-link" href="data_pinjaman.php">LIST BORROWER</a>
                             </li>
                         </ul>
                         </div>

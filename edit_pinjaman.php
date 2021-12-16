@@ -48,14 +48,14 @@
         <?php
                 include 'koneksi.php';
                 $id = $_GET['id'];
-                $data = mysqli_query($db,"SELECT * FROM simpanan_anggota WHERE id='$id'");
+                $data = mysqli_query($db,"SELECT * FROM pinjaman WHERE id='$id'");
 
                 while($d= mysqli_fetch_array($data)){
             ?>
     </div>
 
     <div>
-        <form class = "form" action="aksi_edit.php" method="post">
+        <form class = "form" action="aksi_edit_pinjaman.php" method="post">
             <div >
                 <table >
                     
@@ -67,64 +67,21 @@
         
                     </div>
                     <div class="form-group">
+                        <label for="id">nik</label>
+                        <input type="text" class="form-control" nik="nik" value="<?= $d['nik'] ?>" aria-describedby="emailHelp" name = "nik" placeholder="masukkan nik">
+        
+                    </div>
+                    <div class="form-group">
                         <label for="id">nama</label>
                         <input type="text" class="form-control" nama="nama" value="<?= $d['nama'] ?>" aria-describedby="emailHelp" name = "nama" placeholder="masukkan nama">
         
                     </div>
-                    <div class="form-group">
-                        <label for="id">alamat</label>
-                        <input type="text" class="form-control" alamat="alamat" value="<?= $d['alamat'] ?>" aria-describedby="emailHelp" name = "alamat" placeholder="masukkan alamat">
-        
-                    </div>
                     
 
-                    <div class="form-check">
-                        <?php if($d['jenis_kelamin']=='L') { ?>
-                    <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios1" value="L" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        laki-laki
-                    </label>
-                    </div>
-                    <div class="form-check">
-                    <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios2" value="P">
-                    <label class="form-check-label" for="exampleRadios2">
-                        perempuan
-                    </label>
 
-                    <div class="form-check">
-                    <?php } else { ?>
-                        <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios1" value="L" checked>
-                        <label class="form-check-label" for="exampleRadios1">
-                            laki-laki
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios2" value="P">
-                        <label class="form-check-label" for="exampleRadios2">
-                            perempuan
-                        </label>
-                        <?php } ?>
-                    </div>
-        
-                    </div>
-     
-
-
-
-                    <div>
-                    <select name = "agama" id = "agama" class="form-control form-control-sm">
-                                <option value="" disabled selected>Agama</option>
-                                <option value="islam">Islam</option>
-                                <option value="kristen">Kristen</option>
-                                <option value="katolik">Katolik</option>
-                                <option value="hindu">Hindu</option>
-                                <option value="buddha">Buddha</option>
-                                <option value="konghucu">Konghucu</option>
-                     </select>
-                    </div>
                     <div class="form-group">
-                        <label for="id">simpanan Asal</label>
-                        <input type="text" class="form-control" simpanan="simpanan" value="<?= $d['simpanan'] ?>" aria-describedby="emailHelp" name = "simpanan" placeholder="masukkan simpanan">
+                        <label for="id">pinjaman</label>
+                        <input type="text" class="form-control" pinjaman="pinjaman" value="<?= $d['pinjaman'] ?>" aria-describedby="emailHelp" name = "pinjaman" placeholder="masukkan simpanan">
         
                     </div>
                 </table>
